@@ -135,20 +135,20 @@ function handleClick(e) {
         classWin()
         setTimeout(() => {
           endGame()
-        }, 100);
+        }, 200);
       }
       else if (isDraw()) {
         scoreCalc()
 
         setTimeout(() => {
           tiedGame()
-        }, 100);
+        }, 200);
       }
       if (!winnerCalc()) {
         setTimeout(() => {
           getCPUMove();
 
-        }, 100);
+        }, 200);
       }
 
 
@@ -163,14 +163,14 @@ function handleClick(e) {
       classWin()
       setTimeout(() => {
         endGame()
-      }, 100);
+      }, 200);
 
     }
     else if (isDraw()) {
       scoreCalc()
       setTimeout(() => {
         tiedGame()
-      }, 100);
+      }, 200);
 
     }
     else {
@@ -192,14 +192,14 @@ function getCPUMove() {
     classWin()
     setTimeout(() => {
       endGame()
-    }, 100);
+    }, 200);
   }
   else if (isDraw()) {
     scoreCalc();
 
     setTimeout(() => {
       tiedGame()
-    }, 100);
+    }, 200);
   } else {
     swapTurn()
     setTurn()
