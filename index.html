@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tic-tac-toe</title>
+  <link rel="stylesheet" href="css/normalise.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="backdrop hide"></div>
+  <div class="modalEl">
+    <h2 class="heading">PLAYER 2 WINS!</h2>
+
+    <h4 class="heading-lg">${M} TAKES THE ROUND</h4>
+
+    <div class="modal__buttons">
+      <button id="quit" class="quit">Quit</button>
+      <button id="next-round" class="next-round" onclick="nextRd()">Next Round</button>
+    </div>
+  </div>
+  <section class="game-main  ">
+    <img class="logo" src="images/SVG/logo.svg" alt="" />
+    <div class="pick">
+      <h4>PICK PLAYER 1'S MARK</h4>
+      <div class="mark-pick">
+        <div class="mark" data-mark="x">
+          <svg>
+            <use xlink:href="images/SVG/icon-x-default.svg#icon-x-default"></use>
+          </svg>
+        </div>
+        <div class="mark active" data-mark="o">
+          <svg>
+            <use xlink:href="images/SVG/icon-o-default.svg#icon-o-default"></use>
+          </svg>
+        </div>
+      </div>
+      <p>REMEMBER : X GOES FIRST</p>
+    </div>
+    <button class="new-game" value="vscpu">NEW GAME (VS CPU)</button>
+    <button class="new-game" value="vsplayer">NEW GAME (VS PLAYER)</button>
+  </section>
+
+  <!--      -->
+  <section class="start-game  hide">
+    <div class="header">
+      <img class="logo" src="images/SVG/logo.svg" alt="" />
+      <div class="turn"></div>
+      <div class="restart-game ">
+        <svg class="gameplay__turn-icon">
+          <use xlink:href="images/SVG/icon-restart.svg#icon-restart"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="board">
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+      <div data-cell class="cell"></div>
+    </div>
+    <div class="footer">
+      <div class="score">
+
+      </div>
+      <div class="score ties">
+
+      </div>
+      <div class="score">
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
