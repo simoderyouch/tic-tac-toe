@@ -93,15 +93,7 @@ body {
   background-color: var(--color-silver);
 }
 
-.game-main .pick .mark-pick .mark:hover {
-  background-color: var(--color-silver);
-  opacity: 0.1;
-}
 
-.game-main .pick .mark-pick .mark:hover svg {
-
-  opacity: 1;
-}
 
 .game-main .pick .mark-pick .mark.active svg {
   fill: var(--color-dark-navy);
